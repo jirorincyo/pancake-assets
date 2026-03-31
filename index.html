@@ -4,36 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PNCK TIX</title>
+  <link rel="icon" type="image/png" href="favicon-ticket.png">
   <style>
     * { box-sizing: border-box; }
+
     html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       background: #fbf6f3;
       color: #0e4e71;
       font-family: "Noto Sans JP", sans-serif;
     }
+
+    body {
+      overflow: hidden;
+    }
+
     .wrap {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 20px 14px 32px;
+      padding: 10px 10px 12px;
     }
+
     .head {
       text-align: center;
-      padding: 12px 0 18px;
+      padding: 8px 0 12px;
     }
+
     .title {
-      margin: 0 0 10px;
+      margin: 0 0 8px;
       font-size: clamp(28px, 6vw, 44px);
-      line-height: 1.15;
+      line-height: 1.1;
+      font-weight: 500;
+      letter-spacing: 0.01em;
     }
+
     .sub {
       margin: 0 auto;
       max-width: 42em;
       color: #587280;
       font-size: clamp(14px, 3.8vw, 16px);
-      line-height: 1.8;
+      line-height: 1.7;
     }
+
     .frame-wrap {
       background: rgba(255,255,255,0.82);
       border: 1px solid #d8dde3;
@@ -41,25 +55,30 @@
       overflow: hidden;
       box-shadow: 0 8px 28px rgba(14, 78, 113, 0.08);
     }
+
     iframe {
       display: block;
       width: 100%;
-      min-height: 100vh;
+      height: calc(100vh - 150px);
       border: 0;
       background: #fff;
     }
+
     @media (max-width: 767px) {
       .wrap {
-        padding: 10px 8px 20px;
+        padding: 8px 8px 10px;
       }
+
       .head {
-        padding: 8px 4px 14px;
+        padding: 6px 0 10px;
       }
+
       .frame-wrap {
         border-radius: 14px;
       }
+
       iframe {
-        min-height: 92vh;
+        height: calc(100vh - 130px);
       }
     }
   </style>
@@ -69,13 +88,13 @@
     <div class="head">
       <h1 class="title">PNCK TIX</h1>
       <p class="sub">
-        PANCAKE169所属俳優の出演作品について、チケット手配を承っております。
+        作品・日時・席種を選んで申込内容を追加し、最後に申込者情報をご入力ください。
       </p>
     </div>
 
     <div class="frame-wrap">
       <iframe
-        src="https://script.google.com/macros/s/AKfycbzDhUKZs7hDUoBvdFS0ANmnvhsCipol6ogyxvDYLaGbbcx00tbRRentJ-CLk7wfXU-u/exec"
+        src="https://script.google.com/macros/s/AKfycbw2yl-2xqvRT7n3OSK96oWEe5UZgnSEexfbtVeFu42DMnocGv9layT6eIOzaXRgoJhu/exec"
         title="PNCK TIX Ticket Form"
         loading="lazy"
         referrerpolicy="no-referrer">
