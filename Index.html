@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PNCK TIX</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #fbf6f3;
+      color: #0e4e71;
+      font-family: "Noto Sans JP", sans-serif;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 14px 32px;
+    }
+    .head {
+      text-align: center;
+      padding: 12px 0 18px;
+    }
+    .title {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 6vw, 44px);
+      line-height: 1.15;
+    }
+    .sub {
+      margin: 0 auto;
+      max-width: 42em;
+      color: #587280;
+      font-size: clamp(14px, 3.8vw, 16px);
+      line-height: 1.8;
+    }
+    .frame-wrap {
+      background: rgba(255,255,255,0.82);
+      border: 1px solid #d8dde3;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(14, 78, 113, 0.08);
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      min-height: 100vh;
+      border: 0;
+      background: #fff;
+    }
+    @media (max-width: 767px) {
+      .wrap {
+        padding: 10px 8px 20px;
+      }
+      .head {
+        padding: 8px 4px 14px;
+      }
+      .frame-wrap {
+        border-radius: 14px;
+      }
+      iframe {
+        min-height: 92vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <h1 class="title">PNCK TIX</h1>
+      <p class="sub">
+        PANCAKE169所属俳優の出演作品について、チケット手配を承っております。
+      </p>
+    </div>
+
+    <div class="frame-wrap">
+      <iframe
+        src="https://script.google.com/macros/s/AKfycbzDhUKZs7hDUoBvdFS0ANmnvhsCipol6ogyxvDYLaGbbcx00tbRRentJ-CLk7wfXU-u/exec"
+        title="PNCK TIX Ticket Form"
+        loading="lazy"
+        referrerpolicy="no-referrer">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
